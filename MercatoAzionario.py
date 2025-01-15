@@ -1,5 +1,7 @@
 import random
 
+from treding import mostra_mercato_azioni
+
 class Azione:
     
     def __init__(self, nome, simbolo, prezzo):  
@@ -29,6 +31,8 @@ class Azione:
             azioni.append(Azione(nome, simbolo, prezzo))
         return azioni
 
+
+
     def mostra_mercato_azioni(azioni):
         print("Mercato Azionario Italiano: ")
         for azione in azioni:  
@@ -47,6 +51,7 @@ class Azione:
             print(f"Segnale di Vendita per : {self.nome} ({self.simbolo}) a {self.prezzo} EUR")
             return True
         return False
+
 
 
 # Funzione per simulare la strategia di trading
