@@ -27,3 +27,4 @@ The `Stock` class represents a stock and includes:
 To get started, clone this repository and navigate to the project folder.
 
 ```bash
+https://github.com/aminesalhidev/Stock-Market-Simulation_and_Trading_Strategy
