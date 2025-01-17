@@ -1,30 +1,33 @@
-# Stock Market Simulation and Trading Strategy
+# Simulazione del Mercato Azionario e Strategia di Trading
 
-This repository contains a simple implementation of a stock market simulation with a trading strategy based on stock price fluctuations. The goal is to simulate stock price updates, generate trading signals, and test a basic trading strategy.
+Questo repository contiene una semplice implementazione di una simulazione del mercato azionario con una strategia di trading basata sulle fluttuazioni dei prezzi delle azioni. L'obiettivo è simulare gli aggiornamenti dei prezzi delle azioni, generare segnali di trading e testare una strategia di trading di base.
 
-## Features
+## Caratteristiche
 
-### Stock Class
+### Classe Stock
 
-The `Stock` class represents a stock and includes:
-- **Attributes**:
-  - `name`: The name of the stock (e.g., "Apple").
-  - `symbol`: The stock symbol (e.g., "AAPL").
-  - `price`: The current price of the stock.
-- **Methods**:
-  - `updatePrice()`: Randomly updates the stock price at regular intervals to simulate price fluctuations in the market.
+La classe `Stock` rappresenta un'azione e include:
 
-### Functions
+- **Attributi**:
+  - `name`: Il nome dell'azione (es. "Apple").
+  - `symbol`: Il simbolo dell'azione (es. "AAPL").
+  - `price`: Il prezzo attuale dell'azione.
 
-1. **createStocks(num_stocks)**: Creates `num_stocks` instances of the `Stock` class with random names, symbols, and initial prices.
-2. **displayStockMarket(stocks)**: Displays the current prices of all stocks in the market.
-3. **buySignal(stock)**: Returns `True` if the stock's price has increased by a certain percentage since the last update, indicating a buy signal.
-4. **sellSignal(stock)**: Returns `True` if the stock's price has decreased by a certain percentage since the last update, indicating a sell signal.
-5. **testTradingStrategy(stocks, initial_balance, num_days)**: Simulates trading for the specified number of days using buy and sell signals. Tracks the portfolio and balance throughout the simulation and outputs the final results.
+- **Metodi**:
+  - `updatePrice()`: Aggiorna casualmente il prezzo dell'azione a intervalli regolari per simulare le fluttuazioni del mercato.
 
-## Installation
+### Funzioni
 
-To get started, clone this repository and navigate to the project folder.
+1. **createStocks(num_stocks)**: Crea `num_stocks` istanze della classe `Stock` con nomi, simboli e prezzi iniziali casuali.
+2. **displayStockMarket(stocks)**: Mostra i prezzi correnti di tutte le azioni nel mercato.
+3. **buySignal(stock)**: Restituisce `True` se il prezzo dell'azione è aumentato di una certa percentuale dall'ultimo aggiornamento, indicando un segnale di acquisto.
+4. **sellSignal(stock)**: Restituisce `True` se il prezzo dell'azione è diminuito di una certa percentuale dall'ultimo aggiornamento, indicando un segnale di vendita.
+5. **testTradingStrategy(stocks, initial_balance, num_days)**: Simula il trading per il numero di giorni specificato utilizzando i segnali di acquisto e vendita. Monitora il portafoglio e il saldo durante la simulazione e restituisce i risultati finali.
+
+## Installazione
+
+Per iniziare, clona questo repository e naviga nella cartella del progetto.
 
 ```bash
-https://github.com/aminesalhidev/Stock-Market-Simulation_and_Trading_Strategy
+git clone https://github.com/aminesalhidev/Stock-Market-Simulation_and_Trading_Strategy
+cd Stock-Market-Simulation_and_Trading_Strategy
